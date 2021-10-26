@@ -1,10 +1,19 @@
-import React from 'react';
-
+import React from "react";
+import User from "./components/User";
+import Follower from "./components/Follower";
 class App extends React.Component {
   render() {
-    return(<div>
-      Github Card
-    </div>);
+    return (
+      <div>
+        <h1>GITHUB INFO</h1>
+        <form>
+          <input type="text" />
+          <button>Search</button>
+        </form>
+        <User />
+        <Follower />
+      </div>
+    );
   }
 }
 
