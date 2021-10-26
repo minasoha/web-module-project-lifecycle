@@ -1,6 +1,7 @@
 import React from "react";
 import Follower from "./Follower";
 import axios from "axios";
+
 export default class FollowerList extends React.Component {
   state = {
     followers: [],
@@ -21,13 +22,15 @@ export default class FollowerList extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        <div className="followers">
           <h3>FOLLOWERS:</h3>
         </div>
-        <Follower
-          key={this.state.followers.id}
-          followers={this.state.followers}
-        />
+        <div className="followers-card">
+          <Follower
+            key={this.state.followers.id}
+            followers={this.state.followers}
+          />
+        </div>
       </div>
     );
   }
