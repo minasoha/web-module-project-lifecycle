@@ -1,6 +1,6 @@
 import React from "react";
 import User from "./components/User";
-import Follower from "./components/Follower";
+import FollowerList from "./components/FollowerList";
 class App extends React.Component {
   render() {
     return (
@@ -11,7 +11,7 @@ class App extends React.Component {
           <button>Search</button>
         </form>
         <User />
-        <Follower />
+        <FollowerList />
       </div>
     );
   }
